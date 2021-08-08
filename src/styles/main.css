@@ -1,0 +1,249 @@
+@font-face {
+  font-family: popins;
+  src: url("./Poppins-Medium.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  font-family: popins;
+  letter-spacing: 0.5px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App__left {
+  -webkit-box-shadow: 0 0 14px gainsboro;
+          box-shadow: 0 0 14px gainsboro;
+  border-radius: 7px;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  width: 100%;
+  margin-right: 25px;
+}
+
+.App__left header {
+  height: 65px;
+  background: #001b4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 3px 14px #b7b7b7;
+          box-shadow: 0 3px 14px #b7b7b7;
+}
+
+.App__left header .search {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100vw;
+  padding: 5px;
+}
+
+.App__left header .search input {
+  padding-left: 15px;
+  border: 0;
+  outline: 0;
+}
+
+.App__left header .search input::-webkit-input-placeholder {
+  color: #7c91b8;
+}
+
+.App__left header .search input:-ms-input-placeholder {
+  color: #7c91b8;
+}
+
+.App__left header .search input::-ms-input-placeholder {
+  color: #7c91b8;
+}
+
+.App__left header .search input::placeholder {
+  color: #7c91b8;
+}
+
+.App__left header .search button {
+  all: unset;
+  display: -ms-grid;
+  display: grid;
+  cursor: pointer;
+}
+
+.App__left header .search button svg {
+  width: 25px;
+  margin: 0 5px;
+}
+
+.App__left__items {
+  height: calc(100% - 65px);
+  overflow: auto;
+}
+
+.App__left__items li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 20px;
+  padding: 15px 20px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.App__left__items li .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App__left__items li .inputs input[type='number'] {
+  width: 70px;
+  margin-right: 25px;
+  border: 0;
+  -webkit-box-shadow: 0 0 14px #036ea142;
+          box-shadow: 0 0 14px #036ea142;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+}
+
+.App__left__items li .inputs input[type='checkbox'] {
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.App__right {
+  width: 350px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: calc(100vh - 100px);
+}
+
+.App__right__ticket {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 14px gainsboro;
+          box-shadow: 0 0 14px gainsboro;
+  border-radius: 7px;
+}
+
+.App__right__ticket header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #c8c8c8;
+}
+
+.App__right__ticket header svg {
+  width: 50px;
+  height: 50px;
+}
+
+.App__right__ticket__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  padding: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed lightgrey;
+}
+
+.App__right__ticket__orders {
+  padding: 15px;
+  overflow: auto;
+  max-height: calc(100vh - 355px);
+}
+
+.App__right__ticket__orders li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.App__right__actions {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background: #001c4d;
+  margin: 15px 0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: aliceblue;
+}
+
+.App__right__actions h3 {
+  margin-right: auto;
+}
+
+.App__right__actions button {
+  all: unset;
+  display: -ms-grid;
+  display: grid;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.App__right__actions button svg {
+  width: 30px;
+  fill: aliceblue;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.App__right__actions button svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=main.css.map */
